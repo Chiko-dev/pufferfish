@@ -8,13 +8,11 @@ if (process.env.NODE_ENV === "development") {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const app = new Application();
+  const app = new PIXI.Application();
 
   // Used for automated testing only
   if (process.env.NODE_ENV === "development") {
     window.__PIXI_APP = app;
-
-    __PIXI_APP = new PIXI.Application();
 
   }
 });
