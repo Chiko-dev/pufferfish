@@ -24,4 +24,7 @@ export default {
   assets: {
     root: "/",
   },
+  __PIXI_APP: {
+    
+  }
 };
