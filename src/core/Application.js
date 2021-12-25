@@ -5,6 +5,7 @@ import Game from "../Game";
 import { Viewport } from "pixi-viewport";
 import { center } from "./utils";
 import config from "../config";
+import fish from "../components/Fish"
 
 /**
  * Game entry point. Holds the game's viewport and responsive background
