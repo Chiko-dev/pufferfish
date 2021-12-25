@@ -7,8 +7,11 @@ if (process.env.NODE_ENV === "development") {
   window.PIXI = PIXI;
 }
 
-const app = new Application();
+document.addEventListener("DOMContentLoaded", () => {
+  const app = new Application();
 
-window.__PIXI_APP = app;
-
-export default __PIXI_APP;
+  // Used for automated testing only
+  if (process.env.NODE_ENV === "development") {
+    window.__PIXI_APP = app;
+  }
+});
