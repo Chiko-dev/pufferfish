@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const app = new PIXI.Application();
+  const app = new Application();
 
   // Used for automated testing only
   if (process.env.NODE_ENV === "development") {
