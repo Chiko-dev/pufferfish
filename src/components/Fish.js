@@ -3,10 +3,10 @@ import { Sprite } from 'pixi.js';
 export default class Fish extends Sprite {
   constructor() {
     super();
-    const app = new PIXI.Application();
+    const __PIXI_APP = new PIXI.Application();
 
     const scene = new PIXI.Container();
-    app.stage.addChild(scene);
+    __PIXI_APP.stage.addChild(scene);
 
     this.expand();
   }
@@ -20,3 +20,4 @@ export default class Fish extends Sprite {
 
   }
 }
+
