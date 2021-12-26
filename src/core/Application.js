@@ -6,7 +6,7 @@ import { Viewport } from "pixi-viewport";
 import { center } from "./utils";
 import config from "../config";
 import Fish from "../components/Fish"
-import Scene from "../scenes/Scene"
+
 /**
  * Game entry point. Holds the game's viewport and responsive background
  * All configurations are described in src/config.js
@@ -21,8 +21,7 @@ export default class GameApplication extends Application {
     this.setupViewport();
     this.initGame();
 
-    this.scene = new Scene();
-    this.fish = new Fish();
+    this.fish = new Fish;
   }
 
   /**
